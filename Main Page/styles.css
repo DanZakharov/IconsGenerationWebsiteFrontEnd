@@ -1,5 +1,205 @@
-#main-gen {
-    border-color: blue;
-    border-width: 2px;
-    border-style: solid;
+div#navigation-bar button {
+    border-radius: 2px;
+    border: none;
+    margin: 30px;
+    padding: 5px;
+    font-family: 'Caprasimo', cursive;
+    font-size: 30px;
+    box-shadow: 10px 10px 50px #99b4b1;
+    transition-duration: 0.2s;
+}
+
+div#navigation-bar button:hover {
+    opacity: 75%;
+    box-shadow: 10px 10px 35px #99b4b1;
+}
+
+div#navigation-bar button:active {
+    opacity: 60%;
+    box-shadow: 10px 10px 20px #99b4b1;
+}
+
+/* GENERATION CONTROLS:: ----------------------------------------------- */
+
+div#gen-controls {
+    display: grid;
+    width: 94%;
+    margin: 3% auto 2.5%;
+}
+
+div#prompt-inter {
+    display: flex;
+    justify-content: left;
+}
+
+input#prompt-input {
+    border: black solid 2px;
+    border-right: none;
+    width: 20%;
+}
+
+#dropdown-icon {
+    border: black solid 2px;
+    transition-duration: 0.15s;
+}
+
+#dropdown-icon:hover {
+    opacity: 75%;
+    /*box-shadow: 5px 5px 45px #99b4b1;*/
+}
+
+#dropdown-icon:active {
+    opacity: 60%;
+    /*box-shadow: 5px 5px 70px #99b4b1;*/
+}
+
+/*p#back-switch {*/
+/*    display: grid;*/
+/*    !*justify-content: center;*!*/
+/*    align-content: center;*/
+/*    grid-template-columns: 80% 18%;*/
+/*}*/
+
+p.setting-p-box {
+    border: #120200 2px dashed;
+    padding: 4%;
+    font-size: large;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+/* Checkbox input switches :: ------------------ */
+
+/*#rem-back-box {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    width: 60px;*/
+/*    height: 34px;*/
+/*}*/
+
+/*input#rem-back-switch {*/
+/*    display: none;*/
+/*}*/
+
+/*#rem-back-box {*/
+/*    position: absolute;*/
+/*    cursor: pointer;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background-color: gray;*/
+/*    transition: 0.4s;*/
+/*    border-radius: 34px;*/
+/*}*/
+
+/*#slider:before {*/
+/*    content: "";*/
+/*    height: 26px;*/
+/*    width: 26px;*/
+/*    left: 4px;*/
+/*    bottom: 4px;*/
+/*    background-color: white;*/
+/*    transition: 0.4s;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*input#rem-back-switch:checked + #slider {*/
+/*    background-color: green;*/
+/*}*/
+
+/*input#rem-back-switch:checked + .slider:before {*/
+/*    transform: translateX(26px);*/
+/*}*/
+
+/*input[type="checkbox"] {*/
+/*    justify-self: right;*/
+/*    -webkit-appearance: none;*/
+/*    position: relative;*/
+/*    width: 50px;*/
+/*    height: 30px;*/
+/*    background-color: darkgrey;*/
+/*    transition: background .3s;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+/*input[type="checkbox"]::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 30%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    border-radius: 50%;*/
+/*    !*height: 1.25rem;*!*/
+/*    !*width: 1.25rem;*!*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*    background-color: rgb(255, 255, 255);*/
+/*    transition: left .3s;*/
+/*}*/
+
+/*input[type="checkbox"]:checked {*/
+/*    background-color: darkblue;*/
+/*}*/
+
+/*input[type="checkbox"]:checked::after {*/
+/*    left: 70%;*/
+/*}*/
+
+button.toggle-switch {
+    border: none;
+    border-radius: 5px;
+    height: 60%;
+    width: 90%;
+    justify-self: center;
+}
+
+button.toggle-switch.on-state {
+    background-color: black;
+    color: white;
+}
+
+button.toggle-switch.off-state {
+    background-color: yellow;
+    color: black;
+}
+
+/* Checkbox input switches ⬆⬆⬆ ----------------- */
+
+div#settings-js {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 20%));
+    margin-top: 20px;
+    width: 94%;
+}
+
+p.setting-p-box > input[type="text"] {
+    height: 30px;
+    width: 60px;
+    align-self: center;
+    justify-self: center;
+    /*transform: translate(50%, 50%);*/
+}
+
+/* GENERATION CONTROLS ⬆⬆⬆ ----------------------------------------------- */
+
+/* Images gallery */
+
+div#gen-results > div#show-images-js {
+    width: 94%;
+    margin: 5% auto 2.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 24%));
+    grid-gap: 1%;
+}
+
+div#gen-results > div#show-images-js > img{
+    width: 100%;
+    cursor: pointer;
 }
